@@ -10,6 +10,24 @@
 <body>
 <div class="photo">
     <img src="img\1photo.png">
+
+
+<button class="music-button" onclick="toggleAudio()">▶</button>
+
+<audio id="my-audio">
+  <source src="music/music.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  function toggleAudio() {
+    const audio = document.getElementById('my-audio');
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
 </div>
 
 <div class="photo">
