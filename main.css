@@ -1,0 +1,40 @@
+.photo {
+    width: 100%;
+}
+
+.map { 
+    width: 500px;
+    height: 47px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
+
+
+.photo-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.overlay-content {
+    width: 288px;
+    height: 47px;
+    background-color: #ffffff;
+    font-size: 25px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 475px;
+    text-align: center;
+    color: #4d4a4a;
+    font-family: sans-serif;
+    text-shadow: 0 0 5px black;
+    border-radius: 999px;
+}
