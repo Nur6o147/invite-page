@@ -39,7 +39,7 @@
 </div>
 
 <div class="slider">
-  <img src="img\photo5.png" class="slide" style="display: block;">
+  <img src="img\photo5.png" class="slide active">
   <img src="img\photo6.png" class="slide">
   <img src="img\photo7.png" class="slide">
   <img src="img\photo8.png" class="slide">
@@ -48,25 +48,27 @@
   <button class="next" onclick="changeSlide(1)">›</button>
 </div>
 
+
 <script>
-  let currentSlide = 0;
+  let current = 0;
   const slides = document.querySelectorAll('.slide');
 
   function showSlide(index) {
-    slides.forEach(slide => slide.style.display = 'none');
-    slides[index].style.display = 'block';
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
   }
 
   function changeSlide(n) {
-    currentSlide += n;
-    if (currentSlide >= slides.length) currentSlide = 0;
-    if (currentSlide < 0) currentSlide = slides.length - 1;
-    showSlide(currentSlide);
+    current += n;
+    if (current >= slides.length) current = 0;
+    if (current < 0) current = slides.length - 1;
+    showSlide(current);
   }
 
-  // Показать первую фотографию при загрузке
-  showSlide(currentSlide);
+  // Показать первый слайд при загрузке
+  showSlide(current);
 </script>
+
 
 
 <div>

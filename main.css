@@ -65,23 +65,18 @@ img {
   align-items: center;
   justify-content: center;
 }
-
 .slider {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  height: auto;
   overflow: hidden;
 }
 
 .slide {
   width: 100%;
-  height: auto;
   display: none;
-  object-fit: cover;
 }
 
-.slide:first-child {
+.slide.active {
   display: block;
 }
 
@@ -90,12 +85,12 @@ img {
   top: 50%;
   transform: translateY(-50%);
   font-size: 32px;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 10;
 }
 
 .prev { left: 10px; }
