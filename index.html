@@ -80,5 +80,29 @@
 </div>
 
 
+<div class="rsvp-container">
+  <h2>Подтвердите своё участие</h2>
+
+  <form action="https://formspree.io/f/xqalbrzj" method="POST">
+    <label for="name">Имя:</label><br>
+    <input type="text" id="name" name="guest-name" required><br><br>
+
+    <label>Вы придёте:</label><br>
+    <input type="radio" id="alone" name="attendance" value="Один" required>
+    <label for="alone">Сам/а</label><br>
+
+    <input type="radio" id="plus-one" name="attendance" value="С +1">
+    <label for="plus-one">С кем-то</label><br>
+
+    <input type="radio" id="not-coming" name="attendance" value="Не придёт">
+    <label for="not-coming">Не смогу прийти</label><br><br>
+
+    <button type="submit">Отправить</button>
+  </form>
+</div>
+
+
+
+
 </body>
 </html>

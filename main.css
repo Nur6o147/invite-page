@@ -1,8 +1,20 @@
-.photo {
-  width: 100%;
-  position: relative; /* <== добавь это */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: black; /* или твой фон */
+}
+
+.photo {
+  width: 100%;
+  position: relative; /* <== добавь это */ 
+}
 
 .map { 
     width: 500px;
@@ -37,7 +49,7 @@ img {
     font-family: sans-serif;
     position: absolute;
     top: 85%;
-    left: 12.5%;
+    left: 13%;
     text-align: center;
     color: #4d4a4a;
     font-family: sans-serif;
@@ -98,3 +110,41 @@ img {
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+
+.rsvp-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.rsvp-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff4081;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #e63770;
+}
