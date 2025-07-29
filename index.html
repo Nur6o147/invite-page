@@ -38,6 +38,37 @@
     <img src="img\3photo.png">
 </div>
 
+<div class="slider">
+  <img src="img\photo5.png" class="slide" style="display: block;">
+  <img src="img\photo6.png" class="slide">
+  <img src="img\photo7.png" class="slide">
+  <img src="img\photo8.png" class="slide">
+
+  <button class="prev" onclick="changeSlide(-1)">‹</button>
+  <button class="next" onclick="changeSlide(1)">›</button>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.style.display = 'none');
+    slides[index].style.display = 'block';
+  }
+
+  function changeSlide(n) {
+    currentSlide += n;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    showSlide(currentSlide);
+  }
+
+  // Показать первую фотографию при загрузке
+  showSlide(currentSlide);
+</script>
+
+
 <div>
     <div class="photo-container">
         

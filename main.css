@@ -16,6 +16,10 @@
     transform: translate(-50%, -50%);
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
 
 .photo-container {
     position: relative;
@@ -61,3 +65,38 @@
   align-items: center;
   justify-content: center;
 }
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: cover;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
